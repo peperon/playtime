@@ -1,0 +1,7 @@
+C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Tests\bin\Debug\GameOfLife.Tests.XML
+C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Tests\bin\Debug\GameOfLife.Tests.dll
+C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Tests\bin\Debug\GameOfLife.Tests.pdb
+C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Tests\bin\Debug\FSharp.Core.dll
+C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Tests\bin\Debug\FSharp.Core.xml
+C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Tests\obj\Debug\GameOfLife.Tests.dll
+C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Tests\obj\Debug\GameOfLife.Tests.pdb

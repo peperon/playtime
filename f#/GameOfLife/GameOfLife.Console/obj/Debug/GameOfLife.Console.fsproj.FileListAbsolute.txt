@@ -1,0 +1,8 @@
+C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Console\bin\Debug\GameOfLife.Console.exe.config
+C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Console\bin\Debug\GameOfLife.Console.XML
+C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Console\bin\Debug\GameOfLife.Console.exe
+C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Console\bin\Debug\GameOfLife.Console.pdb
+C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Console\bin\Debug\FSharp.Core.dll
+C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Console\bin\Debug\FSharp.Core.xml
+C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Console\obj\Debug\GameOfLife.Console.exe
+C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Console\obj\Debug\GameOfLife.Console.pdb
