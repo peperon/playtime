@@ -1,11 +1,12 @@
-﻿module Types
+﻿module GameOfLife.Core.Types
 
 type Cell = {
     X : int
-    Y : 
+    Y : int
+    IsAlive : bool
 }
 
 type Grid = {
-    Cells : Cell
+    Cells : seq<Cell>
 }
 
