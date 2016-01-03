@@ -1,7 +1,0 @@
-C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Core\bin\Debug\GameOfLife.Core.XML
-C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Core\bin\Debug\GameOfLife.Core.dll
-C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Core\bin\Debug\GameOfLife.Core.pdb
-C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Core\bin\Debug\FSharp.Core.dll
-C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Core\bin\Debug\FSharp.Core.xml
-C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Core\obj\Debug\GameOfLife.Core.dll
-C:\Users\pkostov\programming\playtime\f#\GameOfLife\GameOfLife.Core\obj\Debug\GameOfLife.Core.pdb
