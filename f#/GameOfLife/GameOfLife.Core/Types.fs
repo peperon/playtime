@@ -8,5 +8,6 @@ type Cell = {
 
 type Grid = {
     Cells : seq<Cell>
+    SideSize : int
 }
 

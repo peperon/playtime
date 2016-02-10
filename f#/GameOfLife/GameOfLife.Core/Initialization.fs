@@ -10,7 +10,7 @@ let initialize side =
         for x in 0 .. side - 1 do
             for y in 0 .. side - 1 do
                 yield { X = x; Y = y; IsAlive = false } }
-    { Cells = cells }
+    { Cells = cells; SideSize = side }
 
 let seed grid percent =
     let count = grid.Cells |> Seq.length
@@ -25,5 +25,5 @@ let seed grid percent =
                 match aliveCells |> Seq.contains x with
                 | true -> { x with IsAlive = true }
                 | false -> x)
-    { Cells = cells }
+    { Cells = cells; SideSize = grid.SideSize }
 

@@ -6,11 +6,7 @@ open FsUnit.Xunit
 open GameOfLife.Core.Types
 open GameOfLife.Core.Initialization
 
-let aliveCells grid =
-    let cells = grid.Cells |> Array.ofSeq
-    cells
-    |> Seq.filter (fun x -> x.IsAlive)
-    |> Seq.length
+open GameOfLife.Tests.Common
 
 [<Trait("Category", "Unit")>]
 module ``When initializing grid`` =

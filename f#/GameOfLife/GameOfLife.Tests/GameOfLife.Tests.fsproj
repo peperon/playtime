@@ -55,7 +55,9 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <Content Include="packages.config" />
+    <Compile Include="Common.fs" />
     <Compile Include="InitializationTests.fs" />
+    <Compile Include="NextGenerationTests.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">
