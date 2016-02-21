@@ -11,3 +11,9 @@ type Grid = {
     SideSize : int
 }
 
+type GameConfiguration = {
+    SideSize : int
+    InitialPopulationPercent : int
+    RenderGridFunction : Grid -> unit
+}
+

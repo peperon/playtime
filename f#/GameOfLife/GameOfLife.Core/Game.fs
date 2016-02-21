@@ -1,8 +1,9 @@
 ﻿module GameOfLife.Core.Game
 
 open Types
+open Initialization
 
-let getAliveNeighbours cell grid =
+let getAliveNeighbours cell (grid : Grid) =
     let outsideCells (x, y) =
         x >= 0 && x < grid.SideSize && y >= 0 && y < grid.SideSize
 
@@ -40,5 +41,22 @@ let createNextGeneration previousGeneration =
     let cells =
         previousGeneration.Cells
         |> Seq.map (fun cell -> { cell with IsAlive = isAlive previousGeneration cell })
+        |> List.ofSeq
     { Cells = cells; SideSize = previousGeneration.SideSize }
+
+let playGameOfLife configuration =
+    let render = configuration.RenderGridFunction
+
+    let rec gameLoop previousGeneration =
+        let nextGeneration = createNextGeneration previousGeneration
+        render nextGeneration
+        gameLoop nextGeneration
+
+    let grid = initialize configuration.SideSize
+    let initialGeneration = seed grid configuration.InitialPopulationPercent 
+
+    render initialGeneration
+
+    gameLoop initialGeneration
+
 

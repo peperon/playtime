@@ -6,10 +6,10 @@ open Types
 
 let initialize side =
     if side <= 0 then raise (Exception())
-    let cells = seq {
+    let cells = [
         for x in 0 .. side - 1 do
             for y in 0 .. side - 1 do
-                yield { X = x; Y = y; IsAlive = false } }
+                yield { X = x; Y = y; IsAlive = false } ]
     { Cells = cells; SideSize = side }
 
 let seed grid percent =
@@ -25,5 +25,6 @@ let seed grid percent =
                 match aliveCells |> Seq.contains x with
                 | true -> { x with IsAlive = true }
                 | false -> x)
+        |> List.ofSeq
     { Cells = cells; SideSize = grid.SideSize }
 

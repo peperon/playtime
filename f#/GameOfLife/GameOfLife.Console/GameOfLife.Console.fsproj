@@ -49,8 +49,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="GridRendering.fs" />
     <Compile Include="Program.fs" />
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameOfLife.Core\GameOfLife.Core.fsproj">
+      <Name>GameOfLife.Core</Name>
+      <Project>{00c80f78-1eda-40ae-9dfc-804efd4897ba}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
