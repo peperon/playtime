@@ -1,4 +1,5 @@
 ﻿using Nancy;
+using NancyToDoApp.Models;
 
 namespace NancyToDoApp
 {
@@ -6,8 +7,9 @@ namespace NancyToDoApp
     {
         public ToDoModule()
         {
+            var toDoService = new ToDoService();
             // List all items in the ToDo
-            Get["/"] = _ => "List all the items";
+            Get["/"] = _ => toDoService.GetList();
             // Page for adding items to the ToDo
             Get["/new"] = _ => "New item page";
             // Post for adding the new items to the ToDo
