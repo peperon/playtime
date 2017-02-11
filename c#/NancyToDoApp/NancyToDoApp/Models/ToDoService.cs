@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace NancyToDoApp.Models
 {
@@ -43,6 +44,11 @@ namespace NancyToDoApp.Models
         public void AddNewItem(ToDoItem newItem)
         {
             ToDoList.Items.Add(newItem);
+        }
+
+        public ToDoItem GetItemByTitle(string title)
+        {
+            return ToDoList.Items.FirstOrDefault(x => x.Title == title);
         }
     }
 }

@@ -21,7 +21,12 @@ namespace NancyToDoApp
                 return View["ToDoList.html", toDoService.GetList()];
             };
             // Get item
-            Get["/{id}"] = _ => "Get specific item";
+            Get["/{title}"] = x =>
+            {
+                string title = x.title;
+                ToDoItem item = toDoService.GetItemByTitle(title);
+                return View["ToDoItemView.html", item];
+            };
             // Update item
             Patch["/{id}"] = _ => "Update item";
             // Delete given item
