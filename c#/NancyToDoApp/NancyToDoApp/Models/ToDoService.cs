@@ -4,10 +4,12 @@ namespace NancyToDoApp.Models
 {
     public class ToDoService
     {
-        public ToDoList GetList()
+        private static ToDoList ToDoList;
+
+        public ToDoService()
         {
-            var toDoList = new ToDoList();
-            toDoList.Items.Add(
+            ToDoList = new ToDoList();
+            ToDoList.Items.Add(
                 new ToDoItem
                 {
                     Description = "Long description of Item 1",
@@ -15,7 +17,7 @@ namespace NancyToDoApp.Models
                     IsDone = false,
                     Title = "Item 1"
                 });
-            toDoList.Items.Add(
+            ToDoList.Items.Add(
                 new ToDoItem
                 {
                     Description = "Long description of Item 2",
@@ -23,7 +25,7 @@ namespace NancyToDoApp.Models
                     IsDone = false,
                     Title = "Item 2"
                 });
-            toDoList.Items.Add(
+            ToDoList.Items.Add(
                 new ToDoItem
                 {
                     Description = "Long description of Item 2",
@@ -31,7 +33,16 @@ namespace NancyToDoApp.Models
                     IsDone = false,
                     Title = "Item 2"
                 });
-            return toDoList;
+        }
+
+        public ToDoList GetList()
+        {
+            return ToDoList;
+        }
+
+        public void AddNewItem(ToDoItem newItem)
+        {
+            ToDoList.Items.Add(newItem);
         }
     }
 }

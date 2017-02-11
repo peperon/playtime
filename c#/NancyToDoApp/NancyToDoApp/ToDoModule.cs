@@ -1,4 +1,5 @@
 ﻿using Nancy;
+using Nancy.ModelBinding;
 using NancyToDoApp.Models;
 
 namespace NancyToDoApp
@@ -9,11 +10,16 @@ namespace NancyToDoApp
         {
             var toDoService = new ToDoService();
             // List all items in the ToDo
-            Get["/"] = _ => toDoService.GetList();
+            Get["/"] = _ => View["ToDoList.html", toDoService.GetList()];
             // Page for adding items to the ToDo
-            Get["/new"] = _ => "New item page";
+            Get["/new"] = _ => View["NewItem.html"];
             // Post for adding the new items to the ToDo
-            Post["/"] = _ => "Adding new item to the to do";
+            Post["/"] = _ =>
+            {
+                ToDoItem newItem = this.Bind();
+                toDoService.AddNewItem(newItem);
+                return View["ToDoList.html", toDoService.GetList()];
+            };
             // Get item
             Get["/{id}"] = _ => "Get specific item";
             // Update item
